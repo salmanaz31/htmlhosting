@@ -1,0 +1,520 @@
+<html lang="en"><head>
+    <title>Your site's title should be here</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your site's description should be here">
+    <meta name="keywords" content="Your site's keywords should be here">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style type="text/css">
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+      */
+
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, 
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure, 
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+
+      html {
+        font-size: 16px;
+      }
+      
+      body {
+        color: #e37924;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 0;
+        text-decoration: none;
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+      .container {
+        margin: 0 auto;
+        max-width: 1024px;
+        width: 100%;
+        background-color: #4b4b4b;
+        overflow: hidden;
+      }
+      
+      .content {
+        width: 100%;
+        display: table;
+      }
+      
+      .header {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #ffffff;
+        overflow: hidden;
+      }
+      
+      .logo {
+        float: left;
+        width: 50%;
+      }
+      
+      .vqs-link {
+        color: #404042;
+        font-size: 1.25rem;
+        margin-top: 0.75rem;
+        float: right;
+      }
+      
+      .title {
+        margin: 1rem 0;
+        padding: 0.5rem;
+        position: relative;
+        background-color: #e37924;
+        overflow: hidden;
+        background-color: #DD9961; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to left, #D57E3B , #DD9961);
+      }
+      
+      .title-col-8 {
+        display: table-cell;
+        width: 74%;
+        vertical-align: middle;
+      }
+      
+      .title-col-4 {
+        display: table-cell;
+        width: 26%;
+      }
+      
+      .make-year {
+        color: #f7ddc9;
+        font-size: 6rem;
+        padding-right: 1rem;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+      .make-model {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+      .model {
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: normal;
+      }
+      
+      .odo-reading {
+        color: #f7ddc9;
+        font-size: 1.25rem;
+        margin-top: 2%;
+        font-weight: normal;
+      }
+      
+      .divider {
+        background-color: #ffffff;
+        display: table-cell;
+      }
+      
+      .pricing {
+        width: 100%;
+        display: table-cell;
+        padding-left: 0.75rem;
+      }
+      
+      .pricing-title {
+        color: #f7ddc9;
+        font-size: 1rem;
+        text-align: center;
+      }
+      
+      .pricing-quote {
+        color: #ffffff;
+        font-size: 3.75rem;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+      
+      .pricing-inclusion {
+        color: #f7ddc9;
+        font-size: 0.75rem;
+        margin-top: 3%;
+        margin-left: 30%;
+        text-align: center;
+      }
+      
+      .details {
+        margin: 1rem;
+        background-color: #ffffff;
+      }
+
+      .photos-group {
+        margin-bottom: 1%;
+      }
+      
+      .photos-col-8 {
+        width: 100%
+      }
+      
+      .photos-col-4 {
+        display: table-row;
+      }
+      
+      .big-image {
+        width: 100%;
+      }
+      
+      .block-auto {
+        margin: 0.75%;
+        width: 18%;
+      }
+      
+      .vehicle-spec, .vehicle-equip {
+        position: relative;
+        margin-top: -0.1rem;
+      }
+      
+      .vehicle-data {
+        margin: 1% 1.25%;
+        overflow: hidden;
+      }
+      
+      .list-table {
+        border-collapse: collapse;
+        color: #666666;
+      }
+      
+      .full-width {
+        width: 100%
+      }
+      
+      .half-width {
+        float: left;
+        width: 49%;
+      }
+      
+      .half-width:nth-child(even) {
+        float: right;
+      }
+      
+      .list-table th, .list-table td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+      
+      .list-table th {
+        font-size: 1.25rem;
+        color: #333333;
+      }
+      
+      .spec-header, .equip-header {
+        padding: 0.75rem 0;
+        font-weight: normal;
+        background-color: #DD9961; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to left, #D8AB78 , #CF9761);
+        overflow: hidden;
+      }
+      
+      .spec-icon, .equip-icon {
+        float: left;
+        max-width: 40px;
+        margin: 0 1.5%;
+      }
+      
+      .spec-title, .equip-title {
+        color: #ffffff;
+        font-size: 2rem;
+      }
+      
+      .footer {
+        padding: 2%;
+        background: #efefef;
+      }
+      
+      .footer-text {
+        margin: 0 auto;
+        position: relative;
+        line-height: 2rem;
+        font-size: 0.7rem;
+      }
+
+      /* 
+        ##Device = Tablets, Ipads (landscape)
+        ##Screen = B/w 320px to 1024px
+      */
+      @media (min-width: 320px) and (max-width: 1024px) {
+        .logo {
+          width: 55%;
+        }
+        .vqs-link {
+          font-size: 1.25rem;
+        }
+        .make-year {
+          font-size: 5rem;
+        }
+        .model {
+          font-size: 2rem;
+        }
+        .odo-reading {
+          font-size: 1.25rem;
+          margin-top: 0.25rem;
+        }
+        .title-col-8 {
+          width: 70%;
+        }
+        .divider {
+          width: 0.25rem;
+        }
+        .pricing-title {
+          font-size: 1.1rem;
+        }
+        .pricing-quote {
+          font-size: 3.5rem;
+        }
+        .spec-title, .equip-title {
+          font-size: 1.75rem;
+        }
+        .footer-text {
+          line-height: 1.5rem;
+        }
+      }
+
+      /* 
+        ##Device = Tablets, Ipads (potrait)
+        ##Screen = B/w 320px to 768px
+      */
+      @media (min-width: 320px) and (max-width: 768px) {
+        .make-year {
+          font-size: 3.5rem;
+        }
+        .model {
+          font-size: 1.5rem;
+        }
+        .odo-reading {
+          font-size: 1rem;
+          margin-top: 0.25rem;
+        }
+        .divider {
+          width: 0.15rem;
+        }
+        .pricing-title {
+          font-size: 0.916rem;
+        }
+        .pricing-quote {
+          font-size: 2.6rem;
+        }
+        .pricing-inclusion {
+          font-size: 0.55rem;
+        }
+        .spec-title, .equip-title {
+          font-size: 1.5rem;
+        }
+        .list-table th {
+          font-size: 1.1rem;
+        }
+        .list-table td {
+          font-size: 0.9rem;
+        }
+        .footer-text {
+          line-height: 1rem;
+        }
+      }
+
+      /* 
+        ##Device = Most of the Smartphones Mobiles (Portrait)
+        ##Screen = B/w 320px to 600px
+      */
+      @media (min-width: 320px) and (max-width: 600px) {
+        .logo {
+          width: 90%;
+          margin: 0 5%;
+        }
+        .vqs-link {
+          float: none;
+          display: block;
+          margin-top: 2rem;
+          text-align: center;
+          font-size: 1rem;
+        }
+        .title {
+          display: block;
+        }
+        .title-col-8 {
+          width: 100%;
+          justify-content: center;
+        }
+        .make-year {
+          font-size: 3.25rem;
+        }
+        .model {
+          font-size: 1.25rem;
+        }
+        .odo-reading {
+          font-size: 0.9rem;
+          margin-top: 0.2rem;
+        }
+        .title-col-4 {
+          width: 100%;
+          margin-top: 0.75rem;
+        }
+        .divider {
+          display: none;
+        }
+        .pricing-quote, .pricing-inclusion  {
+          margin-left: 0.5rem;
+          margin-top: 0;
+        }
+        .photos-group {
+          margin-bottom: 2%;
+        }
+        .spec-header, .equip-header {
+          padding: 0.5rem 0;
+        }
+        .spec-title, .equip-title {
+          font-size: 1.25rem;
+        }
+        .half-width {
+          width: 100%;
+          float: none;
+          margin-bottom: 2.5%;
+        }
+        .footer-text {
+          line-height: 1.5rem;
+        }
+      }
+
+      /* 
+        ##Device = Most of the Smartphones Mobiles (Portrait)
+        ##Screen = B/w 320px to 480px
+      */
+      @media (min-width: 320px) and (max-width: 480px) {
+        .title-col-8, .pricing, .title-col-4, .make-year, .make-model {
+          display: block;
+          text-align: center;
+        }
+        .make-model {
+          float: none;
+        }
+        .pricing {
+          padding: 2.5% 0 0 0;
+        }
+        .pricing-quote, .pricing-inclusion {
+          padding-top: 1%;
+        }
+        .spec-header, .equip-header {
+          padding: 0.25rem 0;
+        }
+        .spec-icon, .equip-icon {
+          margin: 0 2%;
+          width: 1.75rem;
+        }
+        .spec-title, .equip-title {
+          font-size: 1.15rem;
+        }
+        .list-table th {
+          font-size: 1rem;
+        }
+        .list-table td {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <header class="header">
+          <h1>
+            <img id="logo" class="logo" src="https://salmanaz31.github.io/htmlhosting/logo.png">
+          </h1>
+          <a id="vqsLink" class="vqs-link" href="#">Vehicle Quote Sheet</a>
+        </header>
+        <div class="title">
+          <div class="title-col-8">
+            <div id="makeYear" class="make-year">2018</div>
+            <div class="make-model">
+              <h2 id="makeModel" class="model">Honda CR-V FWD 4C EX</h2>
+              <h3 id="odoReading" class="odo-reading">Odometer:24754 mi</h3>
+            </div>
+          </div>
+          <div class="title-col-4">
+            <div class="divider">&nbsp;</div>
+            <div class="pricing">
+              <p id="pricingTitle" class="pricing-title">Your Exclusive Pricing:</p>
+              <p id="pricingQuote" class="pricing-quote">$24,300</p>
+              <p id="pricingInclusion" class="pricing-inclusion">+ Tax, Title, &amp; License</p>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="photos-group">
+            <div class="photos-col-8">
+              <img id="bigImage" class="big-image" src="https://images.cdn.manheim.com/20201027223917-d127e1d5-f2fb-426a-aaf0-8f10d8853495.jpg" alt="">
+              <div class="vehicle-spec">
+                <h4 class="spec-header">
+                  <img id="specIcon" class="spec-icon" src="https://salmanaz31.github.io/htmlhosting/spec-icon.png">
+                  <p id="specTitle" class="spec-title">Vehicle Specifications:</p>
+                </h4>
+                <div id="vehicleSpecs" class="vehicle-data"><table class="list-table full-width"><thead><tr><th>Specification</th><th>Value</th></tr></thead><tbody> <tr class="righttd"><td>VIN:</td><td class="right"><span>7FARW1H56JE052610</span></td></tr> <tr class="righttd"><td>Odometer:</td><td class="right"><span>24754 mi</span></td></tr> <tr class="righttd"><td>Transmission:</td><td class="right"><span>Automatic</span></td></tr> <tr class="righttd"><td>Engine:</td><td class="right"><span>4 Cylinder Turbo</span></td></tr> <tr class="righttd"><td>Drive Train:</td><td class="right"><span>2 Wheel Drive</span></td></tr> <tr class="righttd"><td>Exterior Color:</td><td class="right"><span>Gray</span></td></tr> <tr class="righttd"><td>Interior Color:</td><td class="right"><span>Black</span></td></tr> <tr class="righttd"><td>Interior Type:</td><td class="right"><span>Cloth</span></td></tr> <tr class="righttd"><td>Body Style:</td><td class="right"><span>MPV</span></td></tr> <tr class="righttd"><td>Doors:</td><td class="right"><span>Not Available</span></td></tr> <tr class="righttd"><td>Stereo:</td><td class="right"><span>FM Radio</span></td></tr> </tbody></table></div>
+              </div>
+              <div class="vehicle-equip">
+                <h4 class="equip-header">
+                  <img id="equipIcon" class="equip-icon" src="https://salmanaz31.github.io/htmlhosting/equip-icon.png">
+                  <p id="equipTitle" class="equip-title">Equipment Included:</p>
+                </h4>
+                <div id="vehicleEquips" class="vehicle-data"><table class="list-table full-width"><tbody><tr><td>50 State Emissions</td>  <td>ABS Brakes</td><td>Adaptive Cruise Control</td></tr><tr><td>Air Conditioning</td><td>Automatic Headlights</td><td>Automatic Transmission</td></tr><tr><td>BackUp Camera</td><td>Blind Spot Monitor</td><td>Bluetooth Connection</td></tr><tr><td>Brake Assist System</td><td>Bucket Seats</td><td>Cargo Shade</td></tr><tr><td>Child Safety Locks</td><td>Climate Control</td><td>Cloth Seats</td></tr><tr><td>Cruise Control</td><td>Daytime Running Lights</td><td>Driver Air Bag</td></tr><tr><td>Dual Zone A/C</td><td>Electronic Stability Control</td><td>Engine Immobilizer</td></tr><tr><td>Fog Lamps</td><td>Front Floor Mats</td><td>Heated Mirrors</td></tr><tr><td>Heated SeatsFronts</td><td>Intermittent Wipers</td><td>Keyless Entry</td></tr><tr><td>Keyless Start</td><td>Lane Departure Intervention</td><td>Lane Departure System</td></tr><tr><td>MP3 Compatible Stereo</td><td>Owners Manual</td><td>PassThrough Rear Seat</td></tr><tr><td>Power Locks</td><td>Power Mirrors</td><td>Power Seats</td></tr><tr><td>Power Steering</td><td>Power Tilt/Sliding Sunroof</td><td>Power Windows</td></tr><tr><td>Rear Defroster</td><td>Rear Head Air Bag</td><td>Rear Spoiler</td></tr><tr><td>Remote Engine Start</td><td>Satellite Radio</td><td>Security System</td></tr><tr><td>Steering Wheel Audio Control</td><td>Tilt Steering Wheel</td><td>Tinted Windows</td></tr><tr><td>Tire Pressure Monitor System</td><td>Traction Control</td><td>Trip Computer</td></tr><tr><td>Turbocharged</td><td>Turn Signal Mirrors</td><td>Warranty Books</td></tr><tr><td>Wheels  Alloy</td><td>Woodgrain Interior Package</td></tr></tbody></table></div>
+              </div>
+            </div>
+            <div class="photos-col-5" id="smallimages"> <img id="smallImg_0+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223917-d127e1d5-f2fb-426a-aaf0-8f10d8853495.jpg" alt=""> <img id="smallImg_1+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223957-dea941f8-6828-4268-a9ac-3cd226a108d4.jpg" alt=""> <img id="smallImg_2+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223952-89d9ea84-d32a-49e4-9d3b-aa08341aca90.jpg" alt=""> <img id="smallImg_3+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223943-a288c500-30e9-4cb0-b422-fc7d3e15b543.jpg" alt=""> <img id="smallImg_4+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223937-e73e5ef3-a1b3-48ec-bee3-5f0a1dca5b06.jpg" alt=""> <img id="smallImg_5+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223932-a2096d32-c7b6-4ca9-97a9-d2a9e3242d8d.jpg" alt=""> <img id="smallImg_6+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223852-cf96653b-1353-4a7c-af69-3c4100fd008e.jpg" alt=""> <img id="smallImg_7+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223947-564a5b08-46f6-4275-a5f3-1ded0c8bb93c.jpg" alt=""> <img id="smallImg_8+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223904-e423db12-98b6-4cb5-a159-78f62b4f35d1.jpg" alt=""> <img id="smallImg_9+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223841-0e4a5d70-7b43-479f-ac0a-e5348f910ae0.jpg" alt=""> <img id="smallImg_10+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223847-3d05cd49-a483-432d-a16d-1ced1e4a90e2.jpg" alt=""> <img id="smallImg_11+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223922-96fc2937-e2fd-480a-8399-11d0f819b3e5.jpg" alt=""> <img id="smallImg_12+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223857-c3e6016c-3b1f-41bf-a580-f1db597f1432.jpg" alt=""> <img id="smallImg_13+1" class="block-auto" src="https://images.cdn.manheim.com/20201027223927-a49c40ee-56d2-461c-8e98-79b2fe575c8b.jpg" alt=""></div>
+          </div>
+          <footer class="footer">
+            <p id="footerText" class="footer-text">All vehicles subject to prior sale.We reserve the right to make changes without notice, and are not responsible for errors or omissions.All prices exclude government fees and taxes, any finance charges, and dealer document preparation charge, and any emissions test charge. 12/12/2008-12/18/2008 Kelley Blue Book KARPOWER Online(SM( values for California. Values are subjective opinions. Kelley Blue Book assumes no liability for errors or ommissions as to values, manufacturer or dealer informations.Copyright Kelley Blue Book 2008.All rights reserved</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
